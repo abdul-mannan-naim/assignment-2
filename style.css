@@ -1,0 +1,341 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+font-size: 52px;
+}
+
+
+main{
+margin: 120px;
+}
+
+
+/*----------------------------------
+------------------------------------
+--------------- Menu----------
+----------------- ------------------- */
+.menu{
+display: flex;
+justify-content: space-between;
+
+}
+
+
+
+nav > ul{
+    display: flex;
+}
+
+nav li{
+    list-style: none;
+  margin-right: 20px;
+  padding:0px 10px;
+font-weight: 700;
+font-size: 25px;
+}
+
+nav li:hover{
+    background-color: gray;
+}
+nav li a{
+text-decoration: none;
+color: black;
+font-size: 20px;
+} 
+
+nav > ul > li:hover > ul{
+    display: block;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    padding: 0%;
+    margin: 0%;
+}
+.dropdown li{
+    margin: 0 10px;
+    padding: 0 10px;
+    }
+
+/* -----------------------------------
+-----------------first-part------------
+-------------------------------------*/
+
+.section-1{
+margin-bottom: 50px;
+
+}
+
+.influencer-title{
+width: 243px;
+height: 52.2px;
+}
+.fa-bars{
+margin-right: 15px;
+font-size: 1.35em;
+color: black;
+}
+
+/* .note-box{
+display: flex;
+justify-content: space-between;
+} */
+.note-box{
+display: grid;
+ grid-template-columns: repeat(2, 1fr);
+}
+.box{
+width: 582px;
+height: 270px;
+border-radius: 41px;
+}
+
+.first-image{
+width: 475px;
+height: 475px; 
+ ;
+}
+
+.first-image img{
+width: 442px;
+height: 414px; 
+border-radius: 15px;
+}
+.paragraph{
+font-size: 16px;
+font-weight: 500;
+    }
+
+
+.vlog-button{
+background-color:  #E02C6D;
+color: azure;
+text-decoration: none;
+border-radius: 41px;
+width:196px;
+height:44px;
+padding:10px 26px;
+margin:20px;
+font-size: 1em;
+    }
+
+/* ------------------------------------
+-----------web logo box---------------- 
+---------------------------------------*/
+
+
+
+.logo{
+margin-left: 165px;
+margin-right: 165px;
+margin-bottom: 100px;
+}
+ .web-logo{
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+justify-content: center;
+align-items: center;
+width: 1110px;
+height: 110px;
+border: gray 2px solid;
+padding-left: 30px;
+ }
+
+
+
+/*--------------------------
+--- Collection part----------
+--------------------------- */
+
+    .the-box{
+    border: 1px solid white;
+    }
+
+    .section-title{
+text-align: center;
+
+
+    }
+
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 35px;
+        grid-row-gap: 35px;
+        }
+     .collection-banner{
+     width: 329px;
+     height: 514px;
+     box-shadow: 5px 5px 5px 5px gray ;
+     padding: 10px;
+          }
+    .collection-banner img{
+        width: 300px;
+        height:256px;
+    }
+
+     .collection-name{
+     color: #18191F;
+     font-weight: 500;
+     font-size: 28px;
+     }
+     .collection-price{
+     color: #000000;
+     font-weight: 400;
+     font-size: 24px;
+     }
+
+   .fujifilm img{
+     width: 300px;
+     height: 256px;
+                 }
+
+    .fa-star{
+          font-size: 14px;
+     }
+
+      .fa-star.filled{
+          color: #FFC014;
+     }
+      .fa-star.empty{
+          color:  #AEAEAE;
+     }
+     .next-collection{
+    text-decoration: none;
+    color: #E02C6D;
+    font-size: 16px;
+    font-weight: 700;
+    transform: translateX(1350px);
+     }
+
+
+
+
+/* ----------------------------------
+------------------animation----------
+---------------------------------- */
+ 
+
+ 
+
+    /*-----------------------...........
+    ---------------------- footer....
+    .................................. */
+
+     .final{
+     background-color: black;
+     color: white;
+     text-align: center;
+     height: 240px;
+     align-items: center;
+     padding-top: 50px;
+     padding-bottom: 50px;
+     }
+      .social-link{
+          display: grid;
+        grid-template-columns: repeat(4, 50px);
+        justify-content: center;
+        font-size: 2em;
+        margin-top: 0;
+      }
+
+
+
+
+      /*----------------
+        media queries
+        ------------------ */
+
+
+      /*------------------
+        mobile devices
+   ----------------------- */
+
+
+   @media only screen and (max-width:688px){
+main{
+    margin: 0;
+} 
+.menu{
+grid-template-columns: repeat(1, 1fr);
+}
+.menu {
+    flex-direction: column;
+    }
+.note-box{
+grid-template-columns: repeat(1, 1fr);
+flex-direction: column;
+}
+.box{
+margin-bottom: 230px;
+width: 75%;
+}
+
+.logo{
+    margin: 0%;
+    }
+    .web-logo img{
+    width: 80%;
+    }
+    .web-logo{
+    width: 90%;
+    }
+ 
+.collections{
+grid-template-columns: repeat(1, 1fr);
+}
+
+   }
+ 
+
+/*-------------------------------------------
+----------------- tablet device-------------
+--------------------------------------------- */
+
+
+   @media only screen and (min-width:689px) and (max-width:991px){
+
+main{
+margin: 0%;
+ 
+}
+.menu{
+    grid-template-columns: repeat(1, 1fr);
+    }
+    .menu {
+        flex-direction: column;
+        }
+.note-box{
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+    }
+    .box{
+        margin-bottom: 230px;
+        width: 65%;
+        }
+        
+.logo{
+margin: 0%;
+}
+.web-logo img{
+width: 60%;
+}
+.web-logo{
+width: 90%;
+}
+.collections{
+grid-template-columns:repeat(2, 1fr) ;
+}
+.final{
+    height: 40%;
+    width: 100%;
+}
+ 
+
+   }
+
